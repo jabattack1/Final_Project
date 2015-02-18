@@ -1,0 +1,14 @@
+<br>
+<h2><%= @appetizers[0].course %></h2>
+<% @appetizers.each do |app| %>
+	<li><%= app.dish_name %> 
+	<%= app.description %> 
+	<%= app.price %></li>
+	<% end %>
+
+	<h2><%= @entrees[0].course %></h2>
+<% @entrees.each do |entree| %>
+	<li><%= entree.dish_name %> 
+	<%= entree.description %> 
+	<%= entree.price %></li>
+	<% end %>

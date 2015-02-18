@@ -1,0 +1,31 @@
+<br>
+<form method="POST" action="/users">
+	<label>
+		First Name
+		<input type="text" name="first_name"/>
+	</label>
+	<label>
+		Last Name
+		<input type="text" name="last_name"/>
+	</label>
+	<label>
+		Phone Number
+		<input type="text" name="phone"/>
+	</label>
+	<label>
+		Email Address
+		<input type="text" name="email"/>
+	</label>
+	<label>
+		Address
+		<input type="text" name="address"/>
+	</label>
+	<label>
+		Password
+		<input type="text" name="password"/><br>
+		<input name="authenticity_token" value="<%= form_authenticity_token %>" type="hidden">
+	</label>
+		<input type="submit"/>
+	</form>
+
+	
